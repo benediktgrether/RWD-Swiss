@@ -1,0 +1,141 @@
+.category_teaser-wrapper
+    box-sizing: border-box
+    display: block
+    text-align: center
+    text-decoration: none
+    color: $black
+
+.wrapper-inner
+    max-width: 240px
+    margin: 0 auto
+    padding: 0 10px
+
+    +break($break-m)
+        padding: 0 10px
+
+.category_teaser-image
+    margin: 15px 0
+
+    +break($break-m)
+        margin: 30px 0
+    // width: 64px
+    // height: 64px
+    // padding: 0
+    // font-size: 64px
+
+.category_teaser-image > .teaser-picto
+    width: 64px
+    height: 64px
+    padding: 0
+
+
+.teaser-picto
+    &:before
+        content: '\200B'
+
+.category_teaser-image .category_teaser-picto
+    &:after
+        color: $darkGray
+        width: 64px
+        height: 64px
+        margin-left: -32px
+        margin-top: -32px
+        font-size: 64px
+
+.category_teaser-picto-block
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    letter-spacing: -1ex
+    text-decoration: none
+    width: 30px
+    height: 30px
+    max-height: none
+    padding: 0
+    box-sizing: border-box
+
+    &:after
+        position: absolute
+        top: 50%
+        left: 50%
+        margin-left: -15px
+        margin-top: -15px
+        font-family: $fontSwiss
+        // font-size: 30px
+        color: #47423f
+        content: attr(data-icon)
+        text-align: left
+        font-style: normal
+        font-weight: normal
+        font-variant: normal
+        text-transform: none !important
+        speak: none
+        display: inline-block
+        text-decoration: none
+        width: 30px
+        line-height: 1em
+        -webkit-font-smoothing: antialiased
+
+.picto-car
+    &:after
+        content: "s"
+        font-family: $fontSwiss
+
+.category_teaser-link-wrapper
+    position: relative
+    display: inline-block
+    width: 20px
+    box-sizing: border-box
+    color: $swissRed
+
+.category_teaser-linkicon
+    // text-indent: -9999px 
+    // letter-spacing: -1ex 
+    // color: transparent 
+    // display: inline-block 
+    // width: 0 
+
+    &:after
+        content: ""
+
+    &:after
+        font-family: $fontSwiss 
+        font-weight: normal 
+        text-transform: none 
+        text-decoration: none 
+        -webkit-font-smoothing: antialiased 
+        font-size: 16px 
+        line-height: 12px 
+        vertical-align: baseline 
+        display: inline 
+        bottom: 40% 
+        margin-bottom: -2px 
+        position: absolute 
+        left: 2px 
+
+.category_teaser-title
+    display: inline-block
+    font-size: 1rem
+    font-family: $fontBold
+    font-weight: 700
+    color: $black
+
+    +break($break-m)
+        font-size: 1.25rem
+
+.category_teaser-paragraph
+    display: none 
+    
+    +break($break-m)
+        display: block
+        margin-top: 0.7em
+        margin-bottom: 1.5em
+        width: 105%
+
+.category_teaser-cta
+    display: none
+
+    +break($break-m)
+        font-size: 1.25rem
+        display: inline-block
+        color: $swissRed
