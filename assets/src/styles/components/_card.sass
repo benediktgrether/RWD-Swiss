@@ -9,10 +9,11 @@
         display: flex
         flex-direction: column
         font-size: 1.25rem
+        margin-bottom: 20px
         // padding-right: 20px
 
     &:hover
-        color: #333
+        color: $black
         box-shadow: 0 0 16px 0 rgba(51,51,51,0.2)
 
 .card-home_teaser--image
@@ -26,14 +27,14 @@
         width: 100%
 
 .image--teaser
-    background-image: url(https://www.swiss.com/CMSContent/web/SiteCollectionImages/05-Destinations-Europe/Gdansk/gdansk-id6.jpg)
+    background-image: url(../images/gdansk-id6.jpg)
     display: block
     width: 100%
     height: 90px
     padding-top: 100%
     background-size: cover
     background-position: center
-    transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1),opacity 0.4s,-webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1)
+    transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1)
 
     +break($break-m)
         padding-top: 63%
@@ -66,6 +67,10 @@
     font-weight: 700
     line-height: 1.1
     font-family: $fontBold
+    color: $black
+
+    +break($break-m)
+        font-size: 1.25rem
 
 .card-home_teaser--paragraph
     display: none
@@ -79,7 +84,9 @@
         max-height: 4em
         -webkit-line-clamp: 3
         -webkit-box-orient: vertical
-        text-overflow: ellipsis   
+        text-overflow: ellipsis  
+        font-family: $fontLight
+        font-size: 1rem 
 
 .card-home_teaser--cta
     display: none
@@ -88,11 +95,12 @@
         display: block
         width: 100%
         background-color: $white
-        color: #c00
+        color: $swissRed
         position: relative
         border-top: 1px solid $middleGray
         padding-top: 15px
         margin-top: 15px
+        font-size: 1rem 
 
     &:after
         content: ''
@@ -102,5 +110,5 @@
         width: 0
         height: 0
         border: 4px solid transparent
-        border-left-color: #c00
+        border-left-color: $swissRed
         border-right: none
