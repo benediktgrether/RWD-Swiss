@@ -1,0 +1,241 @@
+.price_list--offers >li{
+	
+	border-bottom: 1px solid #d8d8d8;
+	text-align: left;
+	list-style: none;
+}
+
+.price_list{
+	margin: auto;
+	width: 33.3%;
+}
+
+.price_list--title {
+
+    font-size: 28px;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+    min-height: 54px;
+
+}
+
+.price_list--item {
+
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+    display: block;
+}
+
+.price_list--item--price {
+
+    float: right;
+    color: #c00;
+    padding-left: 10px;
+
+}
+
+.price_list--item--price--prefix {
+
+    font-size: .875rem;
+    vertical-align: baseline;
+
+}
+
+.price_list--item--price::after {
+
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-left-color: #c00;
+    border-right: none;
+
+}
+
+.fair_conditions_link {
+
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-size: .875rem;
+    font-weight: 300;
+    color: #666;
+    padding-left: 25px;
+    background-image: url(https://www.swiss.com/CMSContent/web/PublishingImages/icon/global--sprite.png?20190315);
+    background-position: -412px -77px;
+    width: 16px;
+    height: 16px;
+}
+
+.fair_conditions_link .visuallyhidden {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.fair_conditions_link:hover .visuallyhidden {
+  visibility: visible;
+}
+
+.offer_teaser {
+
+    display: block;
+    position: relative;
+    padding-bottom: 66.66667%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    overflow: hidden;
+
+}
+
+.offer_teaser--content {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    z-index: 0;
+    margin: 20px;
+        margin-top: 20px;
+    margin-top: 0;
+    display: table;
+    table-layout: fixed;
+    width: 50%;
+    height: 150px;
+    max-width: 220px;
+
+}
+
+.offer_teaser--content--inner {
+
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 12.5%;
+    width: 100%;
+    
+}
+
+
+.offer_teaser--heading {
+
+    line-height: 1.2;
+
+}
+
+.offer_teaser--heading--title {
+
+    margin-bottom: .5em;
+    position: relative;
+    white-space: normal;
+
+}
+
+.offer_teaser--price {
+
+    position: relative;
+    display: block;
+    color: white;
+    white-space: nowrap;
+    line-height: 1.2;
+    margin-top: -0.1ex;
+}
+
+.offer_teaser--background--img {
+
+    display: block;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+
+}
+
+.offer_teaser--background--img:hover {
+	
+   	 transform: scale(1.2);
+}
+
+
+.offer_teaser--content::before {
+
+    content: '';
+    background-color: #c00;
+    display: block;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 100%;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 100%;
+
+}
+
+.offer_teaser_layout {
+
+    width: 49.995%;
+    padding-right: 20px;
+    margin: auto;
+	overflow: hidden;
+}
+
+
+
+@media screen and (max-width: 760px) { 
+	
+	body{ font-size: .875rem;}
+	
+	.offer_teaser_layout {
+		
+		max-width: 500px;
+		width: 99.99%;
+		padding-left: 20px;
+	
+	}
+	
+	.offer_teaser--content {
+
+    width: 50%;
+    max-width: 150px;
+    height: 120px;	
+	}
+	
+	.offer_teaser--price {
+
+    font-size: 24px;
+    font-size: 1.5rem;
+
+	}
+	
+	.price_list{
+		width: 99.9%;
+	}
+	
+	
+		
+}
+
