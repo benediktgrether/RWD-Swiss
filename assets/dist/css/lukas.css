@@ -6,10 +6,6 @@
 	list-style: none;
 }
 
-.price_list{
-	margin: auto;
-	width: 33.3%;
-}
 
 .price_list--title {
 
@@ -173,7 +169,7 @@
 
 }
 
-.offer_teaser--background--img:hover {
+.offer_teaser:hover>.offer_teaser--background--img{
 	
    	 transform: scale(1.03);
 }
@@ -193,7 +189,6 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     border-radius: 100%;
-
 }
 
 .offer_teaser_layout {
@@ -232,20 +227,15 @@
 
 	}
 	
-	.price_list{
-		width: 99.9%;
-	}
-	
-	
+
 		
 }
 
 @media screen and (min-width: 760px){
 
 
-    .HeroOffers{
+    #HeroOffers{
         display: flex;
-        margin: 0 20px;
     }
 }
 
